@@ -30,8 +30,6 @@ from getpass import getpass
 if 'hf_key' not in locals():
   hf_key = getpass('Hugging Face API Key:')
 
-#os.environ['hf_key'] = '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'
-
 dataset = load_dataset("Jaymax/FDA_Pharmaceuticals_FAQ")
 
 print("Dataset columns:", dataset.column_names)
